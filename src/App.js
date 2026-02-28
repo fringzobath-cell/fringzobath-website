@@ -125,7 +125,7 @@ const Navbar = ({ currentPage, setCurrentPage, isScrolled }) => {
                 Fringzo<span className="theme-red">bath</span>
               </h1>
               <p className="text-[0.6rem] uppercase tracking-widest text-gray-500 font-medium -mt-1">
-                Fascinated Bathware
+                Fascinated<span className="theme-red"> Bathware</span>
               </p>
             </div>
           </div>
@@ -197,7 +197,7 @@ const Home = ({ navigate }) => {
   const features = [
     {
       icon: <Gem className="w-8 h-8 mb-4 theme-red" />,
-      title: "Premium Quality",
+      title: "Premium Qualitys",
       desc: "Crafted with the finest materials for lasting elegance.",
     },
     {
@@ -301,7 +301,7 @@ const Home = ({ navigate }) => {
               {
                 name: "Rose Gold Dispenser",
                 desc: "Contemporary warmth and sophisticated style.",
-                img: "https://images.unsplash.com/photo-1585652757141-88d01119b914?auto=format&fit=crop&q=80",
+                img: "https://images.unsplash.com/photo-1645567455251-334ed4702f9b?q=80&w=1169&auto=format&fit=crop&q=80",
                 color: "Rose Gold",
               },
             ].map((prod, idx) => (
@@ -525,6 +525,9 @@ const About = ({ navigate }) => {
             <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">
               About Fringzobath
             </h1>
+            <h3 className="text-xl md:text-3xl font-bold text-red mb-4 tracking-tight">
+            Designed for Comfort. Built for Life.
+            </h3>
             <div className="w-24 h-1 bg-theme-red mx-auto rounded-full"></div>
           </div>
         </div>
@@ -533,15 +536,48 @@ const About = ({ navigate }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Story Section */}
         <div className="max-w-3xl mx-auto text-center mb-20">
-          <p className="text-xl leading-relaxed text-gray-600">
-            <strong className="text-gray-900">Fringzobath</strong> is a premium
-            bathware brand focused on delivering elegant, durable, and modern
-            bathroom accessories. Our mission is to combine style with
-            functionality to enhance everyday living. We believe that your
-            bathroom should be a sanctuary—a place where impeccable design meets
-            unmatched utility.
-          </p>
-        </div>
+          <div className="max-w-4xl mx-auto space-y-6">
+  
+  <h2 className="text-3xl md:text-4xl font-bold text-red-600 tracking-tight">
+    About Fringzo
+  </h2>
+
+  <p className="text-lg text-gray-700 leading-relaxed">
+    <span className="font-semibold text-gray-900">At Fringzo</span>, we believe a bathroom is not just a utility space —
+    it is a place of comfort, relaxation and personal luxury.
+  </p>
+
+  <p className="text-lg text-gray-600 leading-relaxed">
+    Our mission is to transform everyday routines into refreshing experiences
+    through thoughtfully designed bath solutions.
+  </p>
+
+  <div className="grid md:grid-cols-2 gap-6 pt-4">
+    
+    <div className="bg-white shadow-md rounded-xl p-6 border-l-4 border-red-600">
+      <h3 className="font-semibold text-gray-900 mb-2">Established Excellence</h3>
+      <p className="text-gray-600 text-sm leading-relaxed">
+        Established in 2015, FRINGZO has grown into a trusted name in bathroom fittings
+        by combining modern aesthetics with durable engineering.
+      </p>
+    </div>
+
+    <div className="bg-white shadow-md rounded-xl p-6 border-l-4 border-red-600">
+      <h3 className="font-semibold text-gray-900 mb-2">Design & Innovation</h3>
+      <p className="text-gray-600 text-sm leading-relaxed">
+        From elegant faucets to complete bath accessories, every product reflects
+        precision craftsmanship and attention to detail.
+      </p>
+    </div>
+
+  </div>
+
+  <p className="text-lg text-gray-600 leading-relaxed pt-4">
+    We continuously research global trends and adapt them to Indian requirements —
+    delivering products that are stylish, practical and reliable.
+  </p>
+  </div>
+  </div>
 
         {/* Vision & Mission */}
         <div className="grid md:grid-cols-2 gap-12 mb-24">
@@ -553,9 +589,8 @@ const About = ({ navigate }) => {
               Our Vision
             </h3>
             <p className="text-gray-600 leading-relaxed relative z-10">
-              To be the most trusted and recognized name in premium bathware,
-              setting the standard for innovation, aesthetics, and enduring
-              quality in homes across the country.
+            To become a recognized Indian brand in bath fittings by delivering consistent quality,
+            innovative designs and trustworthy service.
             </p>
           </div>
           <div className="bg-gray-50 p-10 rounded-3xl border border-gray-100 relative overflow-hidden group">
@@ -566,9 +601,8 @@ const About = ({ navigate }) => {
               Our Mission
             </h3>
             <p className="text-gray-600 leading-relaxed relative z-10">
-              To provide our customers with meticulously crafted products that
-              transform ordinary bathrooms into luxurious spaces, ensuring every
-              interaction with water is a fascinated experience.
+            To provide reliable and elegant bathroom solutions that improve everyday
+            living while maintaining affordability and durability.
             </p>
           </div>
         </div>
@@ -646,7 +680,7 @@ const Contact = () => {
                     <h3 className="font-medium text-gray-300 text-sm">
                       Call Us
                     </h3>
-                    <p className="text-lg">+91-00000-00000</p>
+                    <p className="text-lg">+91-9582283074</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -656,11 +690,11 @@ const Contact = () => {
                       Visit Us
                     </h3>
                     <p className="text-lg leading-relaxed">
-                      123 Premium Bathware Hub,
+                      3198/29, 2nd Floor, Sri Balaji Mkt
                       <br />
-                      Industrial Estate,
+                      Gali Raja Wali,Peepal Mahadev
                       <br />
-                      City, State - 123456
+                      Hauz Qazi, Delhi - 110006
                     </p>
                   </div>
                 </div>
